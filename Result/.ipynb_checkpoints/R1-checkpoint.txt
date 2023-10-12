@@ -1,0 +1,48 @@
+Call:
+glm(formula = CTR ~ CampaignID + CampaignGoalCode + AdDigitalChannel + 
+    Adchannelpartner + AdContentType + AdDevice + AudienceType, 
+    family = binomial(link = "logit"), data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0316  -0.6019  -0.4537  -0.3159   2.5392  
+
+Coefficients: (1 not defined because of singularities)
+                                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                        5.123e+09  5.244e+09   0.977 0.328664    
+CampaignID2                       -2.378e-01  1.640e-02 -14.501  < 2e-16 ***
+CampaignID3                       -4.473e-02  1.449e-02  -3.086 0.002026 ** 
+CampaignID4                        7.534e-01  2.213e-02  34.053  < 2e-16 ***
+CampaignID5                       -2.765e-02  1.484e-02  -1.863 0.062423 .  
+CampaignGoalCodeConsideration      4.512e-01  3.882e-02  11.622  < 2e-16 ***
+CampaignGoalCodeEngagement         2.474e-01  2.345e-02  10.551  < 2e-16 ***
+CampaignGoalCodeIntent to Buy      2.605e-01  3.023e-02   8.615  < 2e-16 ***
+CampaignGoalCodePurchase           5.079e-01  1.010e-01   5.029 4.94e-07 ***
+AdDigitalChannelSearch            -5.123e+09  5.244e+09  -0.977 0.328664    
+AdDigitalChannelSocial            -1.526e+10  7.061e+09  -2.161 0.030709 *  
+AdchannelpartnerChannel Partner 2  1.014e+10  6.402e+09   1.583 0.113383    
+AdchannelpartnerChannel Partner 3 -5.123e+09  5.244e+09  -0.977 0.328664    
+AdchannelpartnerChannel Partner 4  1.014e+10  6.402e+09   1.583 0.113383    
+AdchannelpartnerChannel Partner 5  1.906e-01  1.468e-02  12.989  < 2e-16 ***
+AdchannelpartnerChannel Partner 6 -5.123e+09  5.244e+09  -0.977 0.328664    
+AdchannelpartnerChannel Partner 7  1.014e+10  6.402e+09   1.583 0.113383    
+AdchannelpartnerChannel Partner 9  1.014e+10  6.402e+09   1.583 0.113383    
+AdContentTypeText                 -1.563e+00  1.490e-01 -10.495  < 2e-16 ***
+AdContentTypeVideo                -5.389e-01  2.570e-02 -20.969  < 2e-16 ***
+AdDeviceComputers                  6.489e-01  2.430e-02  26.699  < 2e-16 ***
+AdDeviceMobile                     7.846e-01  2.466e-02  31.819  < 2e-16 ***
+AdDeviceTablets                           NA         NA      NA       NA    
+AudienceTypeAudience Type 2       -7.683e-01  4.670e-02 -16.453  < 2e-16 ***
+AudienceTypeAudience Type 3        1.677e-01  4.436e-02   3.780 0.000157 ***
+AudienceTypeAudience Type 4       -4.378e-01  4.501e-02  -9.726  < 2e-16 ***
+AudienceTypeAudience Type 5       -1.161e+00  3.309e-02 -35.090  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 344786  on 339913  degrees of freedom
+Residual deviance: 296066  on 339888  degrees of freedom
+AIC: 296118
+
+Number of Fisher Scoring iterations: 25

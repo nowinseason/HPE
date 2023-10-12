@@ -1,0 +1,33 @@
+How to interpret fixed effect model
+
+fixed effect model make intercepts 0 which capture heterogeneity in the model. 
+
+Therefore, we can only see the actual effect of each random variable, ignoring any omitted effect in regression .
+
+This means, each coefficient in the result shows the actual effect on Y variable. 
+
+whereas, OLS result shows the result with the channeltype and audience type 
+
+in the case of video complete it is really indirect to make an effect of conversion 
+
+the interesting thing is social share would decrease the conversion. 
+we need more theorical background to explain this but 
+we can imagine that social share is sensitive to who shared this. 
+if warren bufit shared the certain financial thing then this result would be great
+if I shared a post then we cannot calculate the result. 
+and when we look into data shares occur in a specific type of audience and channel
+in the fixed effect model this value decrease very much 
+which means that the actual effect is not that much large as -3. 
+
+
+
+
+how to defense HOW CTR works as control variable?
+because we can assume that CTR is not independent with 3 variables.
+
+this is great question yes, we can think the three variables are parallel with CTR
+however, the context is expecting effect of three variables to future conversion 
+
+three variables could be came from the past CTR but it does not related with future conversion. 
+we used the average CTR of each day not following the audience type and ad channel type
+so we can say this is independent with three variables.
